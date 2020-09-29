@@ -1,0 +1,6 @@
+/.python-version
+/.coverage
+/.nox
+/src/*.egg-info/
+.vscode
+__pycache__
