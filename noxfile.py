@@ -23,7 +23,13 @@ def install_with_contraints(session, *args, **kwargs):
 def tests(session):
     args = session.posargs or ["--cov"]
     session.run("poetry", "install", "--no-dev", external=True)
-    install_with_contraints(session, "coverage[toml]", "pytest", "pytest-cov", "pytest-flask")
+    install_with_contraints(
+        session,
+        "coverage[toml]",
+        "pytest",
+        "pytest-cov",
+        "pytest-flask",
+    )
     session.run("pytest", *args)
 
 

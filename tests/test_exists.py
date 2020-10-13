@@ -12,4 +12,4 @@ def test_app_exists(app):
 def test_home_page(client):
     rv = client.get('/')
     assert rv.status_code == 200
-    assert "Hello World".encode() in rv.data
+    assert "<title>QR</title>".encode() in rv.data

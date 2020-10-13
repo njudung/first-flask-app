@@ -1,4 +1,4 @@
-from flask import Blueprint
+from flask import Blueprint, render_template, url_for  # noqa: F401
 
 bp = Blueprint('main', __name__)
 
