@@ -29,6 +29,7 @@ def tests(session):
         "pytest",
         "pytest-cov",
         "pytest-flask",
+        "pytest-mock",
     )
     session.run("pytest", *args)
 

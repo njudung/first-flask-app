@@ -17,6 +17,7 @@ pytest-cov = "^2.10.1"
 flake8-import-order = "^0.18.1"
 flake8 = "^3.8.3"
 pytest-flask = "^1.0.0"
+pytest-mock = "^3.3.1"
 
 [tool.coverage.paths]
 source = ["src", "*/site-packages"]
